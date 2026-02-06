@@ -1,0 +1,144 @@
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      transition: background 0.3s, color 0.3s;
+      /* background: linear-gradient(to right, #83a4d4, #b6fbff); */
+            background: linear-gradient(135deg, #e1bee7, #fff8e1);
+
+    }
+
+    .dark-mode {
+      background: #121212;
+      color: #f0f0f0;
+    }
+
+    .signup-container {
+      background: white;
+      color: black;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 400px;
+      animation: slideIn 0.5s ease-out;
+    }
+
+    .dark-mode .signup-container {
+      background: #1e1e1e;
+      color: white;
+    }
+
+    @keyframes slideIn {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .btn1{
+       width: 100%;
+      padding: 12px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button {
+      /* width: 100%; */
+      padding: 12px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    /* button:hover {
+      background: #0056b3;
+    } */
+
+    .link {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .message {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .message a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .toggle-password {
+      margin-top: -10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #007BFF;
+      display: block;
+      text-align: right;
+    }
+
+    .strength {
+      height: 8px;
+      width: 100%;
+      border-radius: 6px;
+      background: #eee;
+      margin-top: -10px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .strength-fill {
+      height: 100%;
+      width: 0%;
+      background: red;
+      transition: width 0.3s;
+    }
+
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      background: #fff;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      border: none;
+    }
+
+    .dark-mode .dark-toggle {
+      background: #333;
+      color: #fff;
+    }
+  
