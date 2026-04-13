@@ -80,12 +80,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'example@gmail.com';  //add admin email
-            $mail->Password = ''; // App password
+            $mail->Username = 'radhikaac06@gmail.com';  //add admin email
+            $mail->Password = 'zhnqbjtdpdpuynod'; // App password
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 
-            $mail->setFrom('example@gmail.com', 'Form Bot'); //admin email
+            $mail->setFrom('radhikaac06@gmail.com', 'Form Bot'); //admin
             $mail->addAddress($user_email);
             $mail->isHTML(true);
             $mail->Subject = '✅ Your Form Submission Received';

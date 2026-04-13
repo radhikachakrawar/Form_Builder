@@ -1,5 +1,5 @@
 <?php
-include('../db.php');
+include 'db.php';
 
 $form_link = $_GET['f'] ?? '';
 if (!$form_link) die("❌ Form link missing");

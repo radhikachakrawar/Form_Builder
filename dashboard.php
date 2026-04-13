@@ -4,10 +4,10 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
+    header("Location:login.php");
     exit;
 }
-include('../db.php');
+include 'db.php';
 $user_id = $_SESSION['user_id'];
 ?>
 <!DOCTYPE html>

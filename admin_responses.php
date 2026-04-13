@@ -1,5 +1,5 @@
 <?php
-include('../db.php');
+include 'db.php';
 
 // Fetch all responses
 $sql = "SELECT * FROM responses ORDER BY submitted_at DESC";
